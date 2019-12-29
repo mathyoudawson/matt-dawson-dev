@@ -3,11 +3,13 @@ body {
   padding: 0px;
   --main-color: #FAE78A;
   --secondary-color: #6791D1;
+  font-family: 'Kulim Park', sans-serif;
 }
 
 #hero {
   width: 100%;
   height: 100%;
+  font-size: 2.5em;
 }
 
 .header {
@@ -20,15 +22,18 @@ body {
 }
 
 .secondary-content {
+  width: 100%;
+  height: 100%;
   grid-area: secondary-content;
+  background-image: url("assets/images/waves.jpg");
+  background-size: cover;
 }
 
 .content-column {
+  width: 100%;
+  height: 100%;
   grid-area: sidebar;
-}
-
-div {
-  border: 1px solid red;
+  background-color: var(--main-color);
 }
 
 #container > div {
