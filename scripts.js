@@ -7,10 +7,8 @@ function shadow(e){
   const { offsetWidth: width, offsetHeight: height } = hero;
   let { offsetX: x, offsetY: y } = e;
 
-  if(this !== false){
-    x = x + e.target.offsetLeft;
-    y = y + e.target.offsetTop;
-  }
+  x = x + e.target.offsetLeft;
+  y = y + e.target.offsetTop;
 
   let xWalk = Math.round((x / width * walk) - (walk / 2));
   let yWalk = Math.round((y / height * walk) - (walk / 2));
