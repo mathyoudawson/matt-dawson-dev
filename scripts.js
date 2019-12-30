@@ -15,14 +15,6 @@ function shadow(e){
   let xWalk = Math.round((x / width * walk) - (walk / 2));
   let yWalk = Math.round((y / height * walk) - (walk / 2));
 
-  if (xWalk > 20) {
-    xWalk = 20;
-  }
-
-  if (yWalk > 20) {
-    yWalk = 20;
-  }
-
   text.style.textShadow = `${-xWalk}px ${-yWalk}px 0 #6791D1`;
 }
 
