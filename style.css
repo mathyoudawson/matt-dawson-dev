@@ -41,7 +41,7 @@ body {
 }
 
 .secondary-content h2, p, a {
-  color: white;
+  color: var(--main-color);
 }
 
 .content-column {
