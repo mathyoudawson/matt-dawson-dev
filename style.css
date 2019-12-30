@@ -4,6 +4,7 @@ body {
   --main-color: #FAE78A;
   --secondary-color: #6791D1;
   font-family: 'Kulim Park', sans-serif;
+  background-color: var(--main-color);
 }
 
 .hero {
@@ -44,8 +45,6 @@ body {
 }
 
 .content-column {
-  width: 100%;
-  height: 100%;
   grid-area: sidebar;
   background-color: var(--main-color);
 }
@@ -60,9 +59,12 @@ body {
 #container > div {
   display: inline-grid;
   margin: 0;
+  width: 94%;
+  height: 94%;
+  padding: 3%;
 }
 
- #container {
+#container {
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -73,6 +75,22 @@ body {
   grid-template-areas: 
   "hero hero sidebar sidebar"
   "secondary-content secondary-content sidebar sidebar"
+}
+
+@media only all and (max-device-width: 600px) {
+  #container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-areas: 
+    "hero hero hero hero"
+    "sidebar sidebar sidebar sidebar"
+    "secondary-content secondary-content secondary-content secondary-content"
+  }
 }
 
 .attributes {
