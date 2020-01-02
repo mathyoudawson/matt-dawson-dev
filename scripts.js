@@ -11,7 +11,7 @@ function shadow(e){
   x = x + e.target.offsetLeft;
   y = y + e.target.offsetTop;
 
-  if(list.contains(e.target)){
+  if(list.contains(e.target) && e.target !== list){
     x = x + list.offsetLeft;
     y = y + list.offsetTop;
   }
