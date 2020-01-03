@@ -56,6 +56,17 @@ body {
   justify-content: center;
 }
 
+.skew-list {
+  transform: skew(-1deg, 0deg);;
+  animation: skew 3s infinite;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.14);
+  transition: all 0.5s;
+}
+
+.fade-skew {
+  transition: all 0.5s;
+}
+
 #container > div {
   display: inline-grid;
   margin: 0;
